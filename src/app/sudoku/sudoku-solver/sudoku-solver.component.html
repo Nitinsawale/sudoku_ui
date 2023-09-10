@@ -1,0 +1,24 @@
+
+<div class="row justify-content-center" style="height: 30vh;">
+  <div class="col-8 col-md-8">
+    <mat-grid-list cols="9" rowHeight="8vh">
+      <!--First Row-->
+      <mat-grid-tile *ngFor="let num of [].constructor(81); let cell_index = index">
+
+              <input class="sudoku-cell" [disabled]="getCellValue(cell_index) > 0 " [ngModel]="getCellValue(cell_index)"  type="number">
+
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+  <div class="col-md-4">
+    <div class="d-flex flex-column">
+        <div class="timer">
+          {{display_timer}}
+        </div>
+        <hr>
+    </div>
+  </div>
+
+
+</div>

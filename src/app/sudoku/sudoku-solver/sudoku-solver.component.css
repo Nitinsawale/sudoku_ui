@@ -1,0 +1,24 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.sudoku-cell
+{
+  height: 100%;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.timer
+{
+  font-size: 35px;
+    font-weight: 600;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border: 1px;
+}
